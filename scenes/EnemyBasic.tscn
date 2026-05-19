@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://d2ssorqa1h0q4"]
+
+[ext_resource type="Script" uid="uid://c7wmnlrnb1js0" path="res://scripts/enemy_basic.gd" id="1_e7wm7"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_e7wm7"]
+size = Vector2(20, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yp535"]
+size = Vector2(36, 36)
+
+[node name="EnemyBasic" type="CharacterBody2D" unique_id=583660310 groups=["enemies", "tanks"]]
+script = ExtResource("1_e7wm7")
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1267157533]
+texture = SubResource("PlaceholderTexture2D_e7wm7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=799895077]
+shape = SubResource("RectangleShape2D_yp535")
+
+[node name="Canon" type="Node2D" parent="." unique_id=27252668]
+
+[node name="BulletSpawn" type="Marker2D" parent="Canon" unique_id=2073866380]
+position = Vector2(30, 0)
+
+[node name="ShootTimer" type="Timer" parent="." unique_id=2018792887]
+wait_time = 2.5

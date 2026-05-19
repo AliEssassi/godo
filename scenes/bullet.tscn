@@ -1,15 +1,22 @@
-[gd_scene format=3 uid="uid://ddl1q2hih6h6b"]
+[gd_scene format=3 uid="uid://bjtgaacj0aqo0"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_h1aey"]
+[ext_resource type="Script" uid="uid://ba4gkvafp6psd" path="res://scripts/bullet.gd" id="1_hf8mt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ropf"]
 radius = 4.0
 
-[node name="Bullet" type="Node2D" unique_id=1510112360]
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_hf8mt"]
+size = Vector2(10, 10)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1218816456]
-shape = SubResource("CircleShape2D_h1aey")
+[node name="Bullet" type="CharacterBody2D" unique_id=725072289]
+script = ExtResource("1_hf8mt")
 
-[node name="Balle2D" type="Sprite2D" parent="." unique_id=1937969186]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=180884461]
+shape = SubResource("CircleShape2D_2ropf")
 
-[node name="LifeTimer" type="Timer" parent="." unique_id=187118496]
+[node name="Balle2D" type="Sprite2D" parent="." unique_id=1076423034]
+texture = SubResource("PlaceholderTexture2D_hf8mt")
+
+[node name="LifeTimer" type="Timer" parent="." unique_id=2115753384]
 wait_time = 5.0
 one_shot = true

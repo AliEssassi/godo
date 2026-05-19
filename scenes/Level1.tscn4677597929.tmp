@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bylme8qib5id0"]
+
+[ext_resource type="Script" uid="uid://b2dw4fkckdr2x" path="res://scripts/level_1.gd" id="1_6ovph"]
+[ext_resource type="PackedScene" uid="uid://cxa3sqvykgcp8" path="res://scenes/Player.tscn" id="2_bwv4p"]
+[ext_resource type="PackedScene" uid="uid://cgdeducylygue" path="res://scenes/EnemyBasic.tscn" id="3_odhdn"]
+
+[sub_resource type="TileSet" id="TileSet_kncvy"]
+tile_size = Vector2i(1600, 800)
+
+[node name="Level1" type="Node2D" unique_id=48645420]
+position = Vector2(-1, 0)
+script = ExtResource("1_6ovph")
+
+[node name="TileMap" type="TileMap" parent="." unique_id=738375374]
+tile_set = SubResource("TileSet_kncvy")
+format = 2
+
+[node name="Player" parent="." unique_id=645673341 instance=ExtResource("2_bwv4p")]
+position = Vector2(1, -1)
+script = ExtResource("1_6ovph")
+
+[node name="Enemies" type="Node2D" parent="." unique_id=1751218883]
+
+[node name="CharacterBody2D" parent="Enemies" unique_id=717862615 instance=ExtResource("3_odhdn")]
+
+[node name="CharacterBody2D2" parent="Enemies" unique_id=1502744770 instance=ExtResource("3_odhdn")]

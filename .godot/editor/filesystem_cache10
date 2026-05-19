@@ -1,9 +1,14 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1779142273
-README.md::TextFile::-1::1779141555::0::1::::<><><>0<>0<><>::
-::res://assets/::1779141758
-::res://scenes/::1779142260
-::res://scenes/new scene/::1779142260
-bullet.tscn::PackedScene::6190760755134644896::1779142135::0::1::::<><><>0<>0<><>::
-::res://scripts/::1779142135
-game_manager.gd::GDScript::1907796458830079275::1779142135::0::1::::<>Node<><>0<>0<><>::
+::res://::1779152280
+README.md::TextFile::-1::1779146173::0::1::::<><><>0<>0<><>::
+::res://scenes/::1779152397
+bullet.tscn::PackedScene::7394145381120614371::1779151304::0::1::::<><><>0<>0<><>::
+EnemyBasics.tscn::PackedScene::9092638453512590841::1779152312::0::1::::<><><>0<>0<><>::uid://c7wmnlrnb1js0::::res://scripts/enemy_basic.gd
+Level1.tscn::PackedScene::4094398591742786591::1779150728::0::1::::<><><>0<>0<><>::uid://b2dw4fkckdr2x::::res://scripts/level_1.gd<>uid://cxa3sqvykgcp8::::res://scenes/Player.tscn<>uid://cgdeducylygue::::res://scenes/EnemyBasic.tscn
+Player.tscn::PackedScene::6388917865067243319::1779152417::0::1::::<><><>0<>0<><>::
+::res://scripts/::1779151201
+bullet.gd::GDScript::2446670901695293867::1779151079::0::1::::<>CharacterBody2D<><>0<>0<><>::
+enemy_basic.gd::GDScript::7065053098238071137::1779150917::0::1::::<>CharacterBody2D<><>0<>0<><>::
+game_manager.gd::GDScript::1907796458830079275::1779150982::0::1::::<>Node<><>0<>0<><>::
+level_1.gd::GDScript::4289100435215426537::1779147760::0::1::::<>Node<><>0<>0<><>::
+player.gd::GDScript::8351452206118884091::1779151201::0::1::::<>CharacterBody2D<><>0<>0<><>::

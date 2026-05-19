@@ -1,2 +1,11 @@
+res://scenes/Player.tscn
+res://scenes/Level1.tscn
+res://scripts/level_1.gd
+res://scenes/EnemyBasic.tscn
+res://scripts/enemy_basic.gd
+res://scripts/game_manager.gd
 res://scenes/bullet.tscn
 res://scripts/bullet.gd
+res://scripts/player.gd
+res://scenes/EnemyBasics.tscn
+res://scenes/Bullet.tscn

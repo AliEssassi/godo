@@ -1,3 +1,27 @@
 [gd_scene format=3 uid="uid://cxa3sqvykgcp8"]
 
-[node name="Player" type="Node2D" unique_id=645673341]
+[ext_resource type="Script" uid="uid://dq8rgyrkwuk7t" path="res://scripts/player.gd" id="2_v6fml"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_p0vlq"]
+size = Vector2(20, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yp535"]
+size = Vector2(36, 36)
+
+[node name="Player" type="CharacterBody2D" unique_id=583660310 groups=["player", "tanks"]]
+script = ExtResource("2_v6fml")
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1267157533]
+texture = SubResource("PlaceholderTexture2D_p0vlq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=799895077]
+shape = SubResource("RectangleShape2D_yp535")
+debug_color = Color(0.80321306, 0.25078556, 0.829237, 0.41960785)
+
+[node name="Canon" type="Node2D" parent="." unique_id=27252668]
+
+[node name="BulletSpawn" type="Marker2D" parent="Canon" unique_id=2073866380]
+position = Vector2(30, 0)
+
+[node name="ShootTimer" type="Timer" parent="." unique_id=55428930]
+wait_time = 2.5
